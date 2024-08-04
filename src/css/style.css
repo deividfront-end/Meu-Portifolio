@@ -1,0 +1,217 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Estilização Menu */
+
+.header-menu{
+   
+    background-color: #6e6e6e;
+    max-width:auto ;
+}
+
+.container-menu{
+   
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 0px;
+   
+}
+nav{
+    position: relative;
+    width: 524px;
+    height: 50px;
+    background: #222;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav a{
+    position: relative;
+    display:inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index:1;
+}
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: #035677;
+    border-radius: 8px;
+    transition: .5s;
+
+}
+nav a:nth-child(1):hover~span{
+    left: 0px;
+}
+
+nav a:nth-child(2):hover~span{
+    left: 95px;
+}
+
+nav a:nth-child(3):hover~span{
+    left: 189px;
+    width: 110px;
+}
+nav a:nth-child(4):hover~span{
+    left: 300px;
+    width: 115px;
+}
+nav a:nth-child(5):hover~span{
+    left: 413px;
+    width: 110px;
+}
+
+
+li, a, button{
+    font-family:"Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    
+}
+
+/*Estilização Titulo */
+.container-home{
+    margin-top: 50px;
+  
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: #035677;
+}
+
+
+/*Estilização SubTitulo */
+.conteudo-subtitulo{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    
+}
+
+/*Estilização slider*/
+
+.container-slider{
+   
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+#slider {
+    width: 80%;
+    max-width: 800px;
+    height: 280px;
+
+    position: relative;
+}
+
+#slider img{
+    opacity: 0;
+  
+    position: absolute;
+   background-color: #000000;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: opacity 800ms;
+}
+
+#slider img.selected { 
+    opacity: 1;
+}
+
+
+/*Estilização Container Projects*/
+
+.titulo-projects{
+  
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+   font-weight: 500;
+   font-family:"Montserrat",sans-serif;
+    margin-top: 10px;
+    color: #035677;
+    letter-spacing: 5px;
+    font-size: 20px;
+    align-items: center;
+    
+}
+
+.container-projects{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: #ffffff;
+
+}
+
+.container-sobre{
+    background-color: #000000;
+    padding: 20px;
+    margin-top: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.container-redes{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    color: #edf0f1;
+    background-color: #035677;
+    padding: 10px;
+    gap: 15px;
+}
+
+.container-rodape{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    color: #edf0f1;
+    background-color: #035677;
+     margin-bottom: 0px;
+    font-size: 15px;
+    padding-bottom: 5px;
+    padding-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
