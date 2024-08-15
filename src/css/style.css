@@ -1,6 +1,7 @@
 
 
 *{
+    height: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,12 +9,23 @@
 }
 
 
+
+    body{
+      
+        margin: 0!important;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+       
+    
+    }
 /*Estilização Menu */
 
 .header-menu{
    
     background-color: #6e6e6e;
     max-width:auto ;
+
 }
 
 .container-menu{
@@ -43,7 +55,7 @@ nav a{
     display:inline-block;
     font-size: 1em;
     font-weight: 500;
-    color: #fff;
+    color: #e5e7e8;
     text-decoration: none;
     padding: 0 23px;
     z-index:1;
@@ -52,32 +64,30 @@ nav span{
     position: absolute;
     top: 0;
     left: 0;
-    width: 95px;
+    width: 172px;
     height: 100%;
-    background: #035677;
+    background: #06405d;
     border-radius: 8px;
     transition: .5s;
 
 }
-nav a:nth-child(1):hover~span{
-    left: 0px;
+nav  a:nth-child(1):hover~span{
+    left: 1px;
+   
 }
 
 nav a:nth-child(2):hover~span{
-    left: 95px;
+    left: 174px;
+    width: 67px;
 }
 
 nav a:nth-child(3):hover~span{
-    left: 189px;
-    width: 110px;
+    left: 282px;
+    width: 60px;
 }
 nav a:nth-child(4):hover~span{
-    left: 300px;
-    width: 115px;
-}
-nav a:nth-child(5):hover~span{
-    left: 413px;
-    width: 110px;
+    left: 342px;
+    width: 182px;
 }
 
 
@@ -138,7 +148,7 @@ li, a, button{
     opacity: 0;
   
     position: absolute;
-   background-color: #000000;
+    background-color: #000000;
     width: 100%;
     height: 100%;
 
@@ -169,6 +179,8 @@ li, a, button{
     
 }
 
+
+
 .container-projects{
     margin-top: 20px;
     display: flex;
@@ -177,6 +189,9 @@ li, a, button{
     background-color: #ffffff;
 
 }
+
+
+/*Estilização Container Sobre/About*/
 
 .container-sobre{
     background-color: #000000;
@@ -190,6 +205,7 @@ li, a, button{
     text-align: center;
 }
 
+/*Estilização Container Redes*/
 
 .container-redes{
     display: flex;
@@ -197,11 +213,11 @@ li, a, button{
     justify-items: center;
     text-align: center;
     color: #edf0f1;
-    background-color: #035677;
+    background-color: #f3ecec;
     padding: 10px;
     gap: 15px;
 }
-
+/*Estilização Container Rodapé*/
 .container-rodape{
     display: flex;
     justify-content: center;
@@ -214,4 +230,127 @@ li, a, button{
     padding-bottom: 5px;
     padding-top: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+    
+/*Responsive */
+@media  only screen and (max-width: 415px){
+  
+
+
+/*Estilização Menu */
+
+.container-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+   
+    gap:2px;
+   
+}
+nav a{
+    display: flex;
+    margin-left: 5px;
+}
+
+ nav .home{
+    display: flex;
+    justify-content: center;
+    width: 68px;
+   
+    gap:10px!important;
+ }
+
+ nav .projects{
+    display: flex;
+    justify-content: center;
+    width: 68px;
+
+    gap:10px!important;
+ }
+
+ nav .about{
+    display: flex;
+    justify-content: center;
+    width: 68px;
+  
+    gap:10px!important;
+ }
+ nav .contact{
+    display: flex;
+    justify-content: center;
+    width: 68px;
+   
+    gap:10px!important;
+ }
+
+ nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: #055574;
+    border-radius: 8px;
+    transition: .5s;
+
+}
+nav a:nth-child(1):hover~span{
+    left: 0px;
+}
+
+nav a:nth-child(2):hover~span{
+    left: 95px;
+    width: 68px;
+}
+
+nav a:nth-child(3):hover~span{
+    left: 168px;
+    width: 68px;
+}
+nav a:nth-child(4):hover~span{
+    left: 235px;
+    width: 90px;
+}
+
+
+/*Estilização slider RESPONSIVE */
+
+.container-slider{
+  
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: auto;
+    background-color: red;  
+    gap: 5px;
+    
+
+}
+#slider {
+    background-image: url(../img/slider1.jpg);
+    background-image: url(../img/slider2.jpg);
+
+    background-size: cover;
+    background-color: #5eff00;
+}
+
+   
+    
+}
+
+
+
+.container-rodape{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+   background-color: #000000;
+    padding: 20px;
+    
+
+
 }
