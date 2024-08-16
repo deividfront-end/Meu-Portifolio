@@ -12,11 +12,12 @@
 
     body{
       
-        margin: 0!important;
+        margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
-       
+        background-image: url(../img/fundo2.jpg);
+     background-size: cover;
     
     }
 /*Estilização Menu */
@@ -43,7 +44,7 @@ nav{
     position: relative;
     width: 524px;
     height: 50px;
-    background: #222;
+    background: #2f2e2e;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -64,7 +65,7 @@ nav span{
     position: absolute;
     top: 0;
     left: 0;
-    width: 172px;
+    width: 523px;
     height: 100%;
     background: #06405d;
     border-radius: 8px;
@@ -72,7 +73,8 @@ nav span{
 
 }
 nav  a:nth-child(1):hover~span{
-    left: 1px;
+    left: 70px;
+    width: 60px;
    
 }
 
@@ -86,8 +88,8 @@ nav a:nth-child(3):hover~span{
     width: 60px;
 }
 nav a:nth-child(4):hover~span{
-    left: 342px;
-    width: 182px;
+    left: 375px;
+    width: 75px;
 }
 
 
@@ -109,7 +111,7 @@ li, a, button{
     justify-content: center;
     justify-items: center;
     align-items: center;
-    color: #035677;
+    color: #ffffff;
 }
 
 
@@ -121,12 +123,13 @@ li, a, button{
     margin-top: 0px;
     margin-bottom: 50px;
     font-size: 15px;
+    color: #6e6e6e;
     
 }
 
 /*Estilização slider*/
 .container-slider{
-    background-color: #ffffff;
+   
     justify-content: center;
     
   
@@ -179,84 +182,50 @@ li, a, button{
    font-weight: 500;
    font-family:"Montserrat",sans-serif;
     margin-top: 10px;
-    color: #035677;
+    color: #ffffff;
     letter-spacing: 4px;
     font-size: 20px;
     align-items: center;
-    background-color: #039aff1f;
+    background-color: #4f54589d;
     
 }
 
 
 .container-projects{
-   height: 280px;
+ 
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    justify-items: center;
+     text-align: justify;
+    padding: 20px;
+    
     color: #035677;
     font-family:"Montserrat",sans-serif;
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 20px ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
- 
-    text-align: center;
-    gap: 20px;
-    
-    
+    background-color: #063d7c69;
+
 }
-    .pj1 h3{
-        letter-spacing: 2px;
-        display: flex;
-        justify-content: center;
-        color: #000000;
-        margin-top: -40px;
-        margin-left: 65px;  
-    }
-    .pj2 h3{
-        letter-spacing: 2px;
-        display: flex;
-        justify-content: center;
-        color: #000000;
-        margin-top: -40px;
-        margin-left: -25px;  
-    }
-    .pj3 h3{
-        letter-spacing: 2px;
-        display: flex;
-        justify-content: center;
-        color: #000000;  
-        margin-top: -40px;
-        margin-left: 105px;   
-    }
-    .pj4 h3{
-        letter-spacing: 2px;
-        
-        display: flex;
-        justify-content: center;
-        color: #000000;
-        margin-top: -40px;
-        margin-left: 55px;  
-    }
 
 
-.container-projects .pj1-img{
-    width: 50px;
-    height: 50px;
-    margin-left: -650px;
-}
+   
+
+
+
 
  h3:hover{
-    color: #035677;
+    color: #fff700;
     
 }
 
 /*Estilização Container Sobre/About*/
 
 .container-sobre{
-    background-color: #000000;
+    background-color: #00000090;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: white;
     display: flex;
     justify-content: center;
@@ -274,23 +243,25 @@ li, a, button{
     justify-items: center;
     text-align: center;
     color: #edf0f1;
-    background-color: #000000;
+    background-color: #000000aa;
     padding: 10px;
     gap: 15px;
+    
+    
 }
 /*Estilização Container Rodapé*/
 .container-rodape{
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
     justify-items: center;
     text-align: center;
     color: #edf0f1;
-    background-color: #000000;
+    background-color: #000000aa;
      margin-bottom: 0px;
     font-size: 15px;
     padding-bottom: 5px;
-    padding-top: 30px;
+    padding-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -360,6 +331,7 @@ nav a{
 }
 nav a:nth-child(1):hover~span{
     left: 0px;
+   
 }
 
 nav a:nth-child(2):hover~span{
@@ -381,48 +353,45 @@ nav a:nth-child(4):hover~span{
 
 
 .container-projects{
-    
-    height: 280px;
-     color: #000000;
-     font-family:"Montserrat",sans-serif;
-     font-size: 20px;
-     margin-top: 20px;
-     padding: 20px ;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     justify-items: center;
   
-     text-align: center;
-     gap: 20px;
-     
-     background-color: #0b6385;
- }
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    gap:20px;
+    justify-items: center;
+     text-align: justify;
+    padding: 20px;
+    
+    color: #035677;
+    font-family:"Montserrat",sans-serif;
+    background-color: #000000;
+
+}
      .pj1 h3{
          letter-spacing: 2px;
-         display: flex;
-         justify-content: center;
+        
+        
          color: #ffffff;
-         margin-top: -40px;
-         margin-left: 65px;  
+        
+       
          font-size: 10px;
      }
      .pj2 h3{
          letter-spacing: 2px;
-         display: flex;
-         justify-content: center;
+        
+        
          color: #ffffff;
-         margin-top: -40px;
-         margin-left: 70px;  
          font-size: 10px;
      }
      .pj3 h3{
          letter-spacing: 2px;
-        
+       
+      
         
          color: #ffffff;  
-         margin-top: -40px;
-         margin-left: 70px;   
+       
          font-size: 10px;
         
          
@@ -430,23 +399,18 @@ nav a:nth-child(4):hover~span{
      .pj4 h3{
          letter-spacing: 2px;
          
-         display: flex;
-         justify-content: center;
+      
          color: #ffffff;
-         margin-top: -40px;
-         margin-left: 70px;  
+        
+       
          font-size: 10px;
      }
    
     
-.container-projects .pj1-img{
-    width: 40px;
-    height: 40px;
-    margin-left: -210px;
-}
+
 
  h3:hover{
-    color: #035677;
+    color: #fff700;
     
 }
 
@@ -454,7 +418,7 @@ nav a:nth-child(4):hover~span{
 .container-sobre{
     background-color: #000000;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     color: white;
     display: flex;
     justify-content: center;
@@ -468,10 +432,11 @@ nav a:nth-child(4):hover~span{
 
 
 .container-rodape{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     justify-items: center;
-   background-color: #000000;
+   background-color: #000000aa;
     padding: 20px;
     
 
