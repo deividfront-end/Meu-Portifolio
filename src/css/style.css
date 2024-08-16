@@ -125,41 +125,48 @@ li, a, button{
 }
 
 /*Estilização slider*/
-
 .container-slider{
-   
-    display: flex;
+    background-color: #ffffff;
     justify-content: center;
-    justify-items: center;
-    align-items: center;
-    gap: 5px;
-
-}
-
-#slider {
-    width: 80%;
-    max-width: 800px;
-    height: 280px;
-
-    position: relative;
-}
-
-#slider img{
-    opacity: 0;
+    
   
-    position: absolute;
-    background-color: #000000;
+    
+    justify-content: center!important;
+    justify-items: center;
+
+}
+.slider {
+   display: flex;
+   justify-content: center;
+    overflow: hidden;
     width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    transition: opacity 800ms;
-}
-
-#slider img.selected { 
-    opacity: 1;
-}
+    position: relative;
+  }
+  
+  .slide .slide1 {
+    
+    width: 300px;
+    height: 300px;
+    float: left;
+  }
+  .slide .slide2 {
+    border-radius: 25px;
+    width: 300px;
+    height:300px ;
+    float: left;
+  }
+  .slide .slide3 {
+    border-radius: 25px;
+    width: 300px;
+    height:300px ;
+    float: left;
+  }
+  .slide .slide4 {
+    border-radius: 25px;
+    width: 250px;
+    height:300px ;
+    float: left;
+  }
 
 
 /*Estilização Container Projects*/
@@ -173,30 +180,83 @@ li, a, button{
    font-family:"Montserrat",sans-serif;
     margin-top: 10px;
     color: #035677;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-size: 20px;
     align-items: center;
+    background-color: #039aff1f;
     
 }
 
 
-
 .container-projects{
+   height: 280px;
+    color: #035677;
+    font-family:"Montserrat",sans-serif;
+    font-size: 20px;
     margin-top: 20px;
+    padding: 20px ;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     justify-items: center;
-    background-color: #ffffff;
+ 
+    text-align: center;
+    gap: 20px;
+    
+    
+}
+    .pj1 h3{
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        color: #000000;
+        margin-top: -40px;
+        margin-left: 65px;  
+    }
+    .pj2 h3{
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        color: #000000;
+        margin-top: -40px;
+        margin-left: -25px;  
+    }
+    .pj3 h3{
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        color: #000000;  
+        margin-top: -40px;
+        margin-left: 105px;   
+    }
+    .pj4 h3{
+        letter-spacing: 2px;
+        
+        display: flex;
+        justify-content: center;
+        color: #000000;
+        margin-top: -40px;
+        margin-left: 55px;  
+    }
 
+
+.container-projects .pj1-img{
+    width: 50px;
+    height: 50px;
+    margin-left: -650px;
 }
 
+ h3:hover{
+    color: #035677;
+    
+}
 
 /*Estilização Container Sobre/About*/
 
 .container-sobre{
     background-color: #000000;
     padding: 20px;
-    margin-top: 0px;
+    margin-top: 20px;
     color: white;
     display: flex;
     justify-content: center;
@@ -208,27 +268,29 @@ li, a, button{
 /*Estilização Container Redes*/
 
 .container-redes{
+    
     display: flex;
     justify-content: center;
     justify-items: center;
     text-align: center;
     color: #edf0f1;
-    background-color: #f3ecec;
+    background-color: #000000;
     padding: 10px;
     gap: 15px;
 }
 /*Estilização Container Rodapé*/
 .container-rodape{
+    height: 100px;
     display: flex;
     justify-content: center;
     justify-items: center;
     text-align: center;
     color: #edf0f1;
-    background-color: #035677;
+    background-color: #000000;
      margin-bottom: 0px;
     font-size: 15px;
     padding-bottom: 5px;
-    padding-top: 0;
+    padding-top: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -317,30 +379,10 @@ nav a:nth-child(4):hover~span{
 
 /*Estilização slider RESPONSIVE */
 
-.container-slider{
-  
-
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    width: auto;
-    background-color: red;  
-    gap: 5px;
-    
-
-}
-#slider {
-    background-image: url(../img/slider1.jpg);
-    background-image: url(../img/slider2.jpg);
-
-    background-size: cover;
-    background-color: #5eff00;
-}
 
    
     
-}
+
 
 
 
@@ -353,4 +395,5 @@ nav a:nth-child(4):hover~span{
     
 
 
+}
 }

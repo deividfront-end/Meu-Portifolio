@@ -1,28 +1,24 @@
-let time = 5000,
-    currentImageIndex = 0,
-    images = document
-                .querySelectorAll("#slider img")
-    max = images.length;
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+let slideIndex = 0;
 
-function nextImage() {
+function showSlides()   
+ {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
 
-    images[currentImageIndex]
-        .classList.remove("selected")
+  slideIndex++;
+  if (slideIndex > slides.length - 1) {
+    slideIndex = 0;
+  }
 
-    currentImageIndex++
+  slides[slideIndex].style.display = 'block';   
 
-    if(currentImageIndex >= max)
-        currentImageIndex = 0
-
-    images[currentImageIndex]
-        .classList.add("selected")
 }
 
-function start() {
-    setInterval(() => {
-        // troca de image
-        nextImage()
-    }, time)
-}
+// Chamar a função para iniciar o slider
+showSlides();
 
-window.addEventListener("load", start)
+// Configurar um intervalo para trocar os slides automaticamente
+setInterval(showSlides, 3000); // Troca a cada 2 segundos
