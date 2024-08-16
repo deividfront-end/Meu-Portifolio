@@ -380,9 +380,90 @@ nav a:nth-child(4):hover~span{
 /*Estilização slider RESPONSIVE */
 
 
+.container-projects{
+    
+    height: 280px;
+     color: #000000;
+     font-family:"Montserrat",sans-serif;
+     font-size: 20px;
+     margin-top: 20px;
+     padding: 20px ;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     justify-items: center;
+  
+     text-align: center;
+     gap: 20px;
+     
+     background-color: #0b6385;
+ }
+     .pj1 h3{
+         letter-spacing: 2px;
+         display: flex;
+         justify-content: center;
+         color: #ffffff;
+         margin-top: -40px;
+         margin-left: 65px;  
+         font-size: 10px;
+     }
+     .pj2 h3{
+         letter-spacing: 2px;
+         display: flex;
+         justify-content: center;
+         color: #ffffff;
+         margin-top: -40px;
+         margin-left: 70px;  
+         font-size: 10px;
+     }
+     .pj3 h3{
+         letter-spacing: 2px;
+        
+        
+         color: #ffffff;  
+         margin-top: -40px;
+         margin-left: 70px;   
+         font-size: 10px;
+        
+         
+     }
+     .pj4 h3{
+         letter-spacing: 2px;
+         
+         display: flex;
+         justify-content: center;
+         color: #ffffff;
+         margin-top: -40px;
+         margin-left: 70px;  
+         font-size: 10px;
+     }
    
     
+.container-projects .pj1-img{
+    width: 40px;
+    height: 40px;
+    margin-left: -210px;
+}
 
+ h3:hover{
+    color: #035677;
+    
+}
+
+
+.container-sobre{
+    background-color: #000000;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    
+}
 
 
 
