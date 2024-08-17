@@ -259,23 +259,23 @@ nav span {
   transition: 0.5s;
 }
 nav a:nth-child(1):hover ~ span {
-  left: 22px;
-  width: 68px!important;
+  left: 29px;
+  width: 72px!important;
 }
 
 nav a:nth-child(2):hover ~ span {
-  left: 94px;
-  width: 70px!important;
+  left: 100px;
+  width: 72px!important;
 }
 
 nav a:nth-child(3):hover ~ span {
-  left: 165px;
-  width: 73px!important;
+  left: 175px;
+  width: 70px!important;
 }
 
 nav a:nth-child(4):hover ~ span {
-  left: 240px;
-  width: 70px!important;
+  left: 247px;
+  width: 72px!important;
 }
 /*Botoes do Menu nav */
   nav a {
